@@ -10,7 +10,7 @@ function App(){
   return (
     <div>
       <Header/>
-      <div style={mainStyles}>
+      <div>
       <Switch>
         <Route exact path='/' component={Welcome}/>
       </Switch>

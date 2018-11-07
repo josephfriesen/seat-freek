@@ -1,10 +1,10 @@
-
 import React from "react";
+import Banner from "./Banner";
 
 function Welcome() {
   return (
   <div>
-    <h1>Welcome to the Market!</h1>
+    <Banner/>
   </div>)
 }
 

@@ -7,24 +7,26 @@ function Header() {
   return (
     <div>
       <style jsx>{`
-          .background {
-            background: linear-gradient(135deg,#1673e6 50%,#01a1e7);
+          .wrapper {
+            position: fixed;
             height: 72px;
             width: 100%;
-            border-bottom: 1px solid black;
+            z-index: 9999;
           }
           .container {
             margin: 0 auto;
-            width: 80%;
+            width: 90%;
+            background-color: transparent;
           }
           .top-bar {
             display: flex;
             justify-content: space-between;
             width: 100%;
+            background-color: transparent;
           }
           `}
         </style>
-      <div className="background">
+      <div className="wrapper">
         <div className="container">
           <div className="top-bar">
             <div className="top-item">

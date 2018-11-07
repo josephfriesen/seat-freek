@@ -10,30 +10,36 @@ function NavLink(props) {
     color: "white"
   }
   if (props.name == "Home") {
-    console.log("hit")
     return (
-      <div><Link to={props.path}style={linkStyle}>
-        <Logo width={128} height={24}/>
-    </Link>
-    </div>
-    )
-  }
-  else {
-    return (
-    <li>
-      <style jsx> {`
-          li {
-            padding-right: 22px;
+      <li>
+        <style jsx> {`
+            li {
+              padding-right: 22px;
 
-          }
-        `}</style>
-      <Link to={props.path}style={linkStyle}>{props.name}</Link>
-    </li>
-  )
-}
-}
-NavLink.propTypes = {
-  name: PropTypes.string.isRequired,
-  path: PropTypes.string.isRequired
-};
-export default NavLink;
+            }
+            `}</style>
+          <Link to={props.path}style={linkStyle}>
+            <Logo width={128} height={24}/>
+          </Link>
+        </li>
+      )
+    }
+    else {
+      return (
+        <li>
+          <style jsx> {`
+              li {
+                padding-right: 22px;
+
+              }
+              `}</style>
+            <Link to={props.path}style={linkStyle}>{props.name}</Link>
+          </li>
+        )
+      }
+    }
+    NavLink.propTypes = {
+      name: PropTypes.string.isRequired,
+      path: PropTypes.string.isRequired
+    };
+    export default NavLink;
